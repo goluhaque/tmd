@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="main" prefHeight="803.0" prefWidth="1354.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="smp_fx.ProfiletabsController">
+  <children>
+    <TabPane fx:id="tP" layoutX="0.0" layoutY="0.0" prefHeight="810.0" prefWidth="1361.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="home_tab" text="Home">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="716.0" prefWidth="1361.0000999999975">
+              <children>
+                <ImageView fx:id="home_img" fitHeight="717.5" fitWidth="1360.9998779296875" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                    <Image url="@profile.jpg" />
+                  </image>
+                </ImageView>
+                <Label id="home_name_label" fx:id="home_name" layoutX="121.0" layoutY="44.0" prefWidth="219.0" text="Name Agrawal">
+                  <font>
+                    <Font name="Segoe Script" size="20.0" fx:id="x11" />
+                  </font>
+                </Label>
+                <Label fx:id="home_email" layoutX="121.0" layoutY="78.0" prefWidth="208.0" text="Email">
+                  <font>
+                    <Font name="Segoe Marker" size="16.0" fx:id="x12" />
+                  </font>
+                </Label>
+                <Separator layoutX="39.0" layoutY="147.0" prefHeight="20.0" prefWidth="290.0" />
+                <Text layoutX="121.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked#">
+                  <fill>
+                    <Color blue="0.000" green="0.384" red="0.800" fx:id="x1" />
+                  </fill>
+                  <font>
+                    <Font name="System Bold" size="14.0" fx:id="x2" />
+                  </font>
+                </Text>
+                <Text fill="$x1" font="$x2" layoutX="121.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Label fx:id="home_bookb_label" layoutX="249.0" layoutY="105.0" text="Label">
+                  <font>
+                    <Font name="System Bold" size="12.0" fx:id="x3" />
+                  </font>
+                </Label>
+                <Label fx:id="home_book_label" font="$x3" layoutX="249.0" layoutY="130.0" text="Label" />
+                <Text fill="$x1" layoutX="1031.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other People using Manipal Diaries:">
+                  <font>
+                    <Font name="Segoe Print" size="16.0" fx:id="x16" />
+                  </font>
+                </Text>
+                <Separator layoutX="1045.0" layoutY="132.0" prefWidth="267.0" />
+                <Region layoutX="1045.0" layoutY="148.0" opacity="0.05" prefHeight="47.0" prefWidth="266.9998779296875" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;&#10;" />
+                <Region layoutX="1045.0" layoutY="287.0" opacity="0.05" prefHeight="47.0" prefWidth="266.9998779296875" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <Region layoutX="1045.0" layoutY="359.0" opacity="0.05" prefHeight="47.0" prefWidth="267.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <Hyperlink fx:id="home_name_hyp1" layoutX="1053.0" layoutY="150.0" onAction="#userHyper" prefWidth="219.0" text="Name Haque">
+                  <font>
+                    <Font name="Segoe Script" size="14.0" fx:id="x4" />
+                  </font>
+                </Hyperlink>
+                <Hyperlink fx:id="home_name_hyp2" font="$x4" layoutX="1053.0" layoutY="220.0" onAction="#userHyper" prefWidth="219.0" text="Name Ayyar" />
+                <Hyperlink fx:id="home_name_hyp3" font="$x4" layoutX="1053.0" layoutY="289.0" onAction="#userHyper" prefWidth="219.0" text="Name Das" />
+                <Hyperlink fx:id="home_name_hyp4" font="$x4" layoutX="1053.0" layoutY="359.0" onAction="#userHyper" prefWidth="219.0" text="Name Lalu" />
+                <Text fill="$x1" layoutX="1053.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Text fill="$x1" layoutX="1053.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Text fill="$x1" layoutX="1053.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Text fill="$x1" layoutX="1053.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#">
+                  <font>
+                    <Font size="12.0" fx:id="x17" />
+                  </font>
+                </Text>
+                <Label fx:id="home_bb_label1" font="$x3" layoutX="1151.0" layoutY="182.0" text="Label" />
+                <Label fx:id="home_bb_label2" font="$x3" layoutX="1151.0" layoutY="252.0" text="Label" wrapText="false" />
+                <Label fx:id="home_bb_label3" font="$x3" layoutX="1151.0" layoutY="318.0" text="Label" />
+                <Label fx:id="home_bb_label4" font="$x3" layoutX="1151.0" layoutY="388.0" text="Label" />
+                <Text fill="WHITE" layoutX="368.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2014 The Manipal Diaries. All Rights Reserved." />
+                <Text layoutX="834.0" layoutY="56.0" scaleX="1.0770794128716599" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the Manipal Diaries">
+                  <font>
+                    <Font name="Pristina" size="23.0" fx:id="x18" />
+                  </font>
+                </Text>
+                <Hyperlink fx:id="home_update" layoutX="391.0" layoutY="44.0" onAction="#init_home" text="Update Feed">
+                  <font>
+                    <Font name="Segoe Script" size="16.0" fx:id="x15" />
+                  </font>
+                </Hyperlink>
+                <Text fill="$x1" layoutX="391.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions and Updates from the Users you have Bookmarked:">
+                  <font>
+                    <Font name="Segoe Print" size="18.0" fx:id="x9" />
+                  </font>
+                </Text>
+                <Region layoutX="391.0" layoutY="164.0" opacity="0.15" prefHeight="77.64112854003906" prefWidth="566.0" style="-fx-background-color: grey;" />
+                <Region layoutX="391.0" layoutY="367.0" opacity="0.15" prefHeight="77.64112854003906" prefWidth="566.0" style="-fx-background-color: grey;" />
+                <Region layoutX="391.0" layoutY="265.0" opacity="0.15" prefHeight="77.64112854003906" prefWidth="566.0" style="-fx-background-color: grey;" />
+                <Region layoutX="391.0" layoutY="463.0" opacity="0.15" prefHeight="77.64112854003906" prefWidth="566.0" style="-fx-background-color: grey;" />
+                <Region layoutX="391.0" layoutY="565.0" opacity="0.15" prefHeight="78.0" prefWidth="566.0" style="-fx-background-color: grey;" />
+                <Hyperlink fx:id="home_ques_hyp1" layoutX="399.0" layoutY="164.0" onAction="#quesHyper" prefHeight="47.0" prefWidth="544.0" text="Question Description">
+                  <font>
+                    <Font name="Segoe Marker" size="14.0" fx:id="x19" />
+                  </font>
+                </Hyperlink>
+                <Hyperlink fx:id="home_ques_hyp2" font="$x19" layoutX="399.0" layoutY="265.0" onAction="#quesHyper" prefHeight="47.0" prefWidth="544.0" text="Question Description" />
+                <Hyperlink fx:id="home_ques_hyp3" font="$x19" layoutX="399.0" layoutY="367.0" onAction="#quesHyper" prefHeight="47.0" prefWidth="544.0" text="Question Description" />
+                <Hyperlink fx:id="home_ques_hyp4" font="$x19" layoutX="399.0" layoutY="470.0" onAction="#quesHyper" prefHeight="47.0" prefWidth="544.0" text="Question Description" />
+                <Hyperlink fx:id="home_ques_hyp5" font="$x19" layoutX="399.0" layoutY="571.0" onAction="#quesHyper" prefHeight="47.0" prefWidth="544.0" text="Question Description" />
+                <Text fill="$x1" layoutX="781.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#">
+                  <font>
+                    <Font size="14.0" fx:id="x6" />
+                  </font>
+                </Text>
+                <Text fill="$x1" font="$x6" layoutX="781.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="781.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="781.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="781.0" layoutY="639.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" layoutX="399.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by">
+                  <font>
+                    <Font size="13.0" fx:id="x7" />
+                  </font>
+                </Text>
+                <Text fill="$x1" layoutX="399.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by" />
+                <Text fill="$x1" layoutX="399.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by" />
+                <Text fill="$x1" font="$x7" layoutX="399.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by" />
+                <Text fill="$x1" font="$x7" layoutX="399.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by" />
+                <Label fx:id="home_nv_label1" font="$x6" layoutX="851.0" layoutY="221.0" text="Label" />
+                <Label fx:id="home_nv_label2" font="$x6" layoutX="851.0" layoutY="325.0" text="Label" />
+                <Label fx:id="home_nv_label3" font="$x6" layoutX="851.0" layoutY="424.0" text="Label" />
+                <Label fx:id="home_nv_label4" font="$x6" layoutX="851.0" layoutY="524.0" text="Label" />
+                <Label fx:id="home_nv_label5" font="$x6" layoutX="851.0" layoutY="624.0" text="Label" />
+                <Label fx:id="home_by_label1" font="$x2" layoutX="433.0" layoutY="221.0" prefWidth="145.0" text="Label" />
+                <Label fx:id="home_by_label2" font="$x2" layoutX="433.0" layoutY="325.0" prefWidth="145.0" text="Label" />
+                <Label fx:id="home_by_label3" font="$x2" layoutX="433.0" layoutY="423.0" prefWidth="145.0" text="Label" />
+                <Label fx:id="home_by_label4" font="$x2" layoutX="434.0" layoutY="524.0" prefWidth="145.0" text="Label" />
+                <Label fx:id="home_by_label5" font="$x2" layoutX="433.0" layoutY="626.0" prefWidth="145.0" text="Label" />
+                <Text fill="$x1" font="$x9" layoutX="51.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions with highest Votes" />
+                <Region layoutX="51.0" layoutY="367.0" opacity="0.15" prefHeight="65.0" prefWidth="260.33203125" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="51.0" layoutY="449.0" opacity="0.15" prefHeight="65.0" prefWidth="260.33203125" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="53.0" layoutY="528.0" opacity="0.15" prefHeight="65.0" prefWidth="257.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="53.0" layoutY="612.0" opacity="0.15" prefHeight="65.0" prefWidth="257.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Hyperlink id="home_hv_hyp3" fx:id="home_hv_hyp5" layoutX="61.0" layoutY="531.0" onAction="#quesHyper" prefHeight="34.0" prefWidth="240.0" text="Hyperlink" wrapText="true">
+                  <font>
+                    <Font name="Segoe Marker" size="15.0" fx:id="x10" />
+                  </font>
+                </Hyperlink>
+                <Hyperlink id="home_hv_hyp1" fx:id="home_hv_hyp4" font="$x10" layoutX="61.0" layoutY="450.0" onAction="#quesHyper" prefHeight="34.0" prefWidth="240.0" text="Hyperlink" wrapText="true" />
+                <Hyperlink id="home_hv_hyp1" fx:id="home_hv_hyp3" font="$x10" layoutX="61.0" layoutY="370.0" onAction="#quesHyper" prefHeight="34.0" prefWidth="240.0" text="Hyperlink" wrapText="true" />
+                <Hyperlink id="home_hv_hyp4" fx:id="home_hv_hyp6" font="$x10" layoutX="61.0" layoutY="613.0" onAction="#quesHyper" prefHeight="34.0" prefWidth="240.0" text="Hyperlink" underline="false" wrapText="true" />
+                <Text fill="$x1" font="$x6" layoutX="61.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="61.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="61.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="61.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Label id="home_hv_label1" fx:id="home_hv_label3" font="$x6" layoutX="131.0" layoutY="409.0" text="Label" />
+                <Label id="home_hv_label2" fx:id="home_hv_label4" font="$x6" layoutX="131.0" layoutY="490.0" text="Label" />
+                <Label id="home_hv_label3" fx:id="home_hv_label5" font="$x6" layoutX="131.0" layoutY="571.0" text="Label" />
+                <Label id="home_hv_label4" fx:id="home_hv_label6" font="$x6" layoutX="131.0" layoutY="655.0" text="Label" />
+                <Region layoutX="51.0" layoutY="280.0" opacity="0.15" prefHeight="65.0" prefWidth="260.33203125" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="51.0" layoutY="198.0" opacity="0.15" prefHeight="65.0" prefWidth="260.33203125" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Hyperlink id="home_hv_hyp1" fx:id="home_hv_hyp2" font="$x10" layoutX="61.0" layoutY="281.0" onAction="#quesHyper" prefHeight="34.0" prefWidth="240.0" text="Hyperlink" wrapText="true" />
+                <Hyperlink fx:id="home_hv_hyp1" font="$x10" layoutX="61.0" layoutY="200.0" onAction="#quesHyper" prefHeight="34.0" prefWidth="240.0" text="Hyperlink" wrapText="true" />
+                <Text fill="$x1" font="$x6" layoutX="61.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="61.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Label id="home_hv_label1" fx:id="home_hv_label2" font="$x6" layoutX="131.0" layoutY="324.0" text="Label" />
+                <Label fx:id="home_hv_label1" font="$x6" layoutX="131.0" layoutY="240.0" text="Label" />
+                <Region layoutX="1045.0" layoutY="221.0" opacity="0.05" prefHeight="47.0" prefWidth="266.9998779296875" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <ImageView fx:id="home_image" fitHeight="52.161628346417594" fitWidth="69.54883575439453" layoutX="39.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
+                <Hyperlink fx:id="home_logout" layoutX="1258.0" layoutY="13.0" onAction="#logout" text="Logout" textFill="WHITE">
+                  <font>
+                    <Font name="Segoe Script" size="18.0" />
+                  </font>
+                </Hyperlink>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="ud_tab" text="User Diary">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="698.0" prefWidth="1285.0" style="-fx-background-image: url(&quot;profile.jpg&quot;);">
+              <children>
+                <ImageView fitHeight="718.5" fitWidth="1361.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                    <Image url="@profile.jpg" />
+                  </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="376.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2014 The Manipal Diaries. All Rights Reserved." />
+                <Label fx:id="ud_name_label" font="$x11" layoutX="487.0" layoutY="37.0" prefWidth="358.0" text="Name Agrawal" />
+                <Label fx:id="ud_email_label" font="$x12" layoutX="487.0" layoutY="74.0" prefWidth="273.0" text="Email" />
+                <Text fill="$x1" layoutX="485.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked#">
+                  <font>
+                    <Font size="15.0" fx:id="x13" />
+                  </font>
+                </Text>
+                <Text fill="$x1" font="$x13" layoutX="708.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Label fx:id="ud_book_label" layoutX="831.0" layoutY="99.0" text="Label">
+                  <font>
+                    <Font name="System Bold" size="15.0" fx:id="x14" />
+                  </font>
+                </Label>
+                <Label fx:id="ud_bookb_label" font="$x14" layoutX="586.0" layoutY="98.0" text="Label" />
+                <ImageView fx:id="image_book" fitHeight="53.666725976559974" fitWidth="53.666725976559974" layoutX="911.0" layoutY="37.0" onMouseClicked="#bookmark" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@bookmark%20icon.png" />
+                  </image>
+                </ImageView>
+                <Text fill="$x1" font="$x9" layoutX="389.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions asked:" />
+                <Region layoutX="403.0" layoutY="190.0" opacity="0.15" prefHeight="75.01171875" prefWidth="554.0" style="-fx-background-color: grey;&#10;" />
+                <Region layoutX="403.0" layoutY="390.0" opacity="0.15" prefHeight="75.01171875" prefWidth="554.0" style="-fx-background-color: grey;&#10;" />
+                <Region layoutX="403.0" layoutY="494.0" opacity="0.15" prefHeight="75.01171875" prefWidth="554.0" style="-fx-background-color: grey;&#10;" />
+                <Region layoutX="403.0" layoutY="595.0" opacity="0.15" prefHeight="75.01171875" prefWidth="554.0" style="-fx-background-color: grey;&#10;" />
+                <Region layoutX="403.0" layoutY="291.0" opacity="0.15" prefHeight="75.01171875" prefWidth="554.0" style="-fx-background-color: grey;&#10;" />
+                <Hyperlink fx:id="ud_ques_hyp1" font="$x19" layoutX="410.0" layoutY="190.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="533.0" text="Question Description" wrapText="true" />
+                <Hyperlink fx:id="ud_ques_hyp2" font="$x19" layoutX="410.0" layoutY="291.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="533.0" text="Question Description" wrapText="true" />
+                <Hyperlink fx:id="ud_ques_hyp3" font="$x19" layoutX="410.0" layoutY="390.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="533.0" text="Question Description" wrapText="true" />
+                <Hyperlink fx:id="ud_ques_hyp4" font="$x19" layoutX="410.0" layoutY="494.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="533.0" text="Question Description" wrapText="true" />
+                <Hyperlink fx:id="ud_ques_hyp5" font="$x19" layoutX="410.0" layoutY="595.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="533.0" text="Question Description" wrapText="true" />
+                <Text fill="$x1" font="$x6" layoutX="417.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="650.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Answers#" />
+                <Text fill="$x1" font="$x6" layoutX="417.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="417.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="415.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="417.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="650.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Answers#" />
+                <Text fill="$x1" font="$x6" layoutX="650.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Answers#" />
+                <Text fill="$x1" font="$x6" layoutX="650.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Answers#" />
+                <Text fill="$x1" font="$x6" layoutX="650.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Answers#" />
+                <Label fx:id="ud_nv_label1" font="$x6" layoutX="490.0" layoutY="247.0" text="Label" />
+                <Label fx:id="ud_ta_label5" font="$x6" layoutX="749.0" layoutY="653.0" text="Label" />
+                <Label fx:id="ud_nv_label5" font="$x6" layoutX="490.0" layoutY="651.0" text="Label" />
+                <Label fx:id="ud_nv_label2" font="$x6" layoutX="490.0" layoutY="347.0" text="Label" />
+                <Label fx:id="ud_nv_label3" font="$x6" layoutX="490.0" layoutY="448.0" text="Label" />
+                <Label fx:id="ud_nv_label4" font="$x6" layoutX="490.0" layoutY="552.0" text="Label" />
+                <Label fx:id="ud_ta_label4" font="$x6" layoutX="749.0" layoutY="549.0" text="Label" />
+                <Label fx:id="ud_ta_label3" font="$x6" layoutX="749.0" layoutY="448.0" text="Label" />
+                <Label fx:id="ud_ta_label2" font="$x6" layoutX="749.0" layoutY="347.0" text="Label" />
+                <Label fx:id="ud_ta_label1" font="$x6" layoutX="748.0" layoutY="246.0" text="Label" />
+                <Text fill="$x1" font="$x9" layoutX="45.0" layoutY="61.0" scaleX="1.0991564882036466" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions dogeared:" />
+                <Separator layoutX="36.0" layoutY="70.0" prefWidth="280.0" />
+                <Region layoutX="37.0" layoutY="291.0" opacity="0.15" prefHeight="76.0" prefWidth="287.0000999999975" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="37.0" layoutY="390.0" opacity="0.15" prefHeight="76.0" prefWidth="287.0000999999975" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="36.0" layoutY="494.0" opacity="0.15" prefHeight="76.0" prefWidth="287.0000999999975" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="36.0" layoutY="595.0" opacity="0.15" prefHeight="76.0" prefWidth="287.0000999999975" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Hyperlink id="ud_dog_hyp1" fx:id="ud_dog_hyp3" font="$x12" layoutX="37.0" layoutY="291.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="288.0" text="Question Description.." wrapText="true" />
+                <Hyperlink id="ud_dog_hyp2" fx:id="ud_dog_hyp4" font="$x12" layoutX="36.0" layoutY="390.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="288.0" text="Question Description.." wrapText="true" />
+                <Hyperlink id="ud_dog_hyp3" fx:id="ud_dog_hyp5" font="$x12" layoutX="37.0" layoutY="494.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="288.0" text="Question Description.." wrapText="true" />
+                <Hyperlink id="ud_dog_hyp4" fx:id="ud_dog_hyp6" font="$x12" layoutX="36.0" layoutY="594.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="288.0" text="Question Description.." wrapText="true" />
+                <Text fill="$x1" font="$x6" layoutX="44.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="44.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="44.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="44.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Label id="ud_dog_label1" fx:id="ud_dog_label3" font="$x6" layoutX="118.0" layoutY="344.0" text="Label" />
+                <Label id="ud_dog_label2" fx:id="ud_dog_label4" font="$x6" layoutX="118.0" layoutY="444.0" text="Label" />
+                <Label id="ud_dog_label3" fx:id="ud_dog_label5" font="$x6" layoutX="118.0" layoutY="547.0" text="Label" />
+                <Label id="ud_dog_label4" fx:id="ud_dog_label6" font="$x6" layoutX="118.0" layoutY="651.0" text="Label" />
+                <Hyperlink fx:id="ud_update_hyp" font="$x15" layoutX="831.0" layoutY="139.0" onAction="#ud_init" text="Update Feed" />
+                <Text fill="$x1" font="$x16" layoutX="1038.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other People using Manipal Diaries:" />
+                <Separator layoutX="1052.0" layoutY="126.0" prefWidth="260.7734375" />
+                <Region layoutX="1047.0" layoutY="143.0" opacity="0.06" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <Region layoutX="1047.0" layoutY="217.0" opacity="0.06" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <Region layoutX="1047.0" layoutY="291.0" opacity="0.06" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <Region layoutX="1047.0" layoutY="371.0" opacity="0.06" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 4px;" />
+                <Hyperlink fx:id="ud_name_hyp1" font="$x4" layoutX="1047.0" layoutY="144.0" onAction="#userHyper" prefWidth="266.0" text="Name" />
+                <Hyperlink id="ud_name_hyp1" fx:id="ud_name_hyp2" font="$x4" layoutX="1047.0" layoutY="218.0" onAction="#userHyper" prefWidth="266.0" text="Name" />
+                <Hyperlink id="ud_name_hyp1" fx:id="ud_name_hyp3" font="$x4" layoutX="1049.0" layoutY="292.0" onAction="#userHyper" prefWidth="266.0" text="Name" />
+                <Hyperlink id="ud_name_hyp1" fx:id="ud_name_hyp4" font="$x4" layoutX="1049.0" layoutY="372.0" onAction="#userHyper" prefWidth="266.0" text="Name" />
+                <Text fill="$x1" font="$x17" layoutX="1049.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Text fill="$x1" font="$x17" layoutX="1052.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Text fill="$x1" font="$x17" layoutX="1052.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Text fill="$x1" font="$x17" layoutX="1052.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookmarked by#" />
+                <Label id="ud_book_label1" fx:id="ud_bookb_label1" font="$x3" layoutX="1139.0" layoutY="182.0" text="Label" />
+                <Label id="ud_book_label2" fx:id="ud_bookb_label2" font="$x3" layoutX="1142.0" layoutY="258.0" text="Label" />
+                <Label id="ud_book_label3" fx:id="ud_bookb_label3" font="$x3" layoutX="1142.0" layoutY="332.0" text="Label" />
+                <Label fx:id="ud_bookb_label4" font="$x3" layoutX="1142.0" layoutY="412.0" text="Label" />
+                <Region layoutX="37.0" layoutY="190.0" opacity="0.15" prefHeight="76.0" prefWidth="287.0000999999975" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="36.0" layoutY="91.0" opacity="0.15" prefHeight="76.0" prefWidth="287.0000999999975" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Hyperlink id="ud_dog_hyp1" fx:id="ud_dog_hyp2" font="$x12" layoutX="37.0" layoutY="190.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="288.0" text="Question Description.." wrapText="true" />
+                <Hyperlink fx:id="ud_dog_hyp1" font="$x12" layoutX="37.0" layoutY="93.0" onAction="#quesHyper" prefHeight="46.0" prefWidth="288.0" text="Question Description.." wrapText="true" />
+                <Text fill="$x1" font="$x6" layoutX="44.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Text fill="$x1" font="$x6" layoutX="44.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Votes#" />
+                <Label id="ud_dog_label1" fx:id="ud_dog_label2" font="$x6" layoutX="118.0" layoutY="244.0" text="Label" />
+                <Label fx:id="ud_dog_label1" font="$x6" layoutX="118.0" layoutY="146.0" text="Label" />
+                <ImageView fx:id="ud_image" fitHeight="58.0" fitWidth="77.33333333333333" layoutX="386.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="df_tab" closable="true" style="" text="Discussions">
+          <content>
+            <AnchorPane id="Content" fx:id="df_ap" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ImageView fitHeight="714.5" fitWidth="1361.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                    <Image url="@profile.jpg" />
+                  </image>
+                </ImageView>
+                <Text font="$x18" layoutX="837.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the Manipal Diaries" />
+                <Text fill="WHITE" layoutX="378.0" layoutY="700.0" scaleX="1.0000003195047595" scaleY="1.002439733235438" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2014 The Manipal Diaries. All Rights Reserved." />
+                <ImageView id="book_image" fx:id="image_dog" fitHeight="57.67549514770508" fitWidth="90.71875013299864" layoutX="864.0" layoutY="61.0" onMouseClicked="#dogear" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@Dogear.png" />
+                  </image>
+                </ImageView>
+                <Label fx:id="df_ques_label" font="$x19" layoutX="461.0" layoutY="137.0" prefHeight="51.0" prefWidth="494.0" text="Complete Question" wrapText="true" />
+                <Label fx:id="df_topic_label" layoutX="460.0" layoutY="79.0" prefWidth="149.19677734375" text="Label">
+                  <font>
+                    <Font name="Segoe Marker" size="18.0" fx:id="x5" />
+                  </font>
+                </Label>
+                <Text fill="$x1" font="$x9" layoutX="393.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topic:" />
+                <Text fill="$x1" font="$x9" layoutX="394.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question:" />
+                <Text fill="$x1" font="$x9" layoutX="420.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answers:" />
+                <TextArea fx:id="df_ans_text" layoutX="501.0" layoutY="592.0" prefHeight="57.67549133300781" prefWidth="454.0" promptText="Add another Answer" wrapText="true" />
+                <Label fx:id="df_ans_label" layoutX="434.0" layoutY="214.0" opacity="1.0" prefHeight="368.0" prefWidth="521.0" style=";" text="Answers Here" textFill="BLACK" wrapText="true">
+                  <font>
+                    <Font name="Segoe Marker" size="12.0" fx:id="x22" />
+                  </font>
+                </Label>
+                <Text fill="$x1" font="$x9" layoutX="39.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topics:" />
+                <Hyperlink fx:id="df_topic_hyp2" font="$x19" layoutX="54.0" layoutY="100.0" onAction="#forumHyper" text="Internships" />
+                <Hyperlink fx:id="df_topic_hyp1" font="$x19" layoutX="54.0" layoutY="68.0" onAction="#forumHyper" text="Placements" />
+                <Hyperlink fx:id="df_topic_hyp4" font="$x19" layoutX="148.0" layoutY="68.0" onAction="#forumHyper" text="Projects" />
+                <Hyperlink fx:id="df_topic_hyp3" font="$x19" layoutX="54.0" layoutY="132.0" onAction="#forumHyper" text="Higher Studies" />
+                <Hyperlink fx:id="df_topic_hyp5" font="$x19" layoutX="148.0" layoutY="100.0" onAction="#forumHyper" text="Current Issues" />
+                <Hyperlink fx:id="df_topic_hyp6" font="$x19" layoutX="148.0" layoutY="132.0" onAction="#forumHyper" text="Miscellaneous" />
+                <Separator layoutX="54.0" layoutY="164.0" prefWidth="262.0" />
+                <Text fill="$x1" font="$x9" layoutX="39.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topic:" />
+                <Label fx:id="df_topic_label1" font="$x5" layoutX="100.0" layoutY="172.0" prefWidth="149.19677734375" text="Label" />
+                <Text fill="$x1" font="$x9" layoutX="40.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Related Questions:" />
+                <Region layoutX="34.0" layoutY="236.0" opacity="0.05" prefHeight="58.0" prefWidth="293.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="34.0" layoutY="390.0" opacity="0.05" prefHeight="58.0" prefWidth="293.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="34.0" layoutY="465.0" opacity="0.05" prefHeight="58.0" prefWidth="293.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="34.0" layoutY="538.0" opacity="0.05" prefHeight="58.0" prefWidth="293.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="34.0" layoutY="614.0" opacity="0.05" prefHeight="58.0" prefWidth="293.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Region layoutX="34.0" layoutY="312.0" opacity="0.05" prefHeight="58.0" prefWidth="293.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;" />
+                <Hyperlink fx:id="df_ques_hyp1" font="$x19" layoutX="39.0" layoutY="239.0" onAction="#quesHyper" prefHeight="31.7724609375" prefWidth="277.0" text="Question Info" wrapText="true" />
+                <Hyperlink fx:id="df_ques_hyp2" font="$x19" layoutX="39.0" layoutY="312.0" onAction="#quesHyper" prefHeight="32.0" prefWidth="277.0" text="Question Info" wrapText="true" />
+                <Hyperlink fx:id="df_ques_hyp3" font="$x19" layoutX="39.0" layoutY="392.0" onAction="#quesHyper" prefHeight="32.0" prefWidth="277.0" text="Question Info" wrapText="true" />
+                <Hyperlink fx:id="df_ques_hyp4" font="$x19" layoutX="39.0" layoutY="469.0" onAction="#quesHyper" prefHeight="32.0" prefWidth="277.0" text="Question Info" wrapText="true" />
+                <Hyperlink fx:id="df_ques_hyp5" font="$x19" layoutX="39.0" layoutY="538.0" onAction="#quesHyper" prefHeight="32.0" prefWidth="277.0" text="Question Info" wrapText="true" />
+                <Hyperlink fx:id="df_ques_hyp6" font="$x19" layoutX="39.0" layoutY="614.0" onAction="#quesHyper" prefHeight="32.0" prefWidth="277.0" text="Question Info" wrapText="true" />
+                <Label layoutX="39.0" layoutY="278.0" text="Net Votes#" textFill="$x1" />
+                <Label layoutX="39.0" layoutY="351.0" text="Net Votes#" textFill="$x1" />
+                <Label layoutX="40.0" layoutY="430.0" text="Net Votes#" textFill="$x1" />
+                <Label layoutX="39.0" layoutY="507.0" text="Net Votes#" textFill="$x1" />
+                <Label layoutX="40.0" layoutY="580.0" text="Net Votes#" textFill="$x1" />
+                <Label layoutX="40.0" layoutY="656.0" text="Net Votes#" textFill="$x1" />
+                <Label fx:id="df_nv_label1" font="$x17" layoutX="99.0" layoutY="277.0" prefWidth="64.0" text="Label" />
+                <Label fx:id="df_nv_label2" font="$x17" layoutX="100.0" layoutY="351.0" prefWidth="64.0" text="Label" />
+                <Label fx:id="df_nv_label3" font="$x17" layoutX="100.0" layoutY="430.0" prefWidth="64.0" text="Label" />
+                <Label fx:id="df_nv_label4" font="$x17" layoutX="100.0" layoutY="507.0" prefWidth="64.0" text="Label" />
+                <Label fx:id="df_nv_label5" font="$x17" layoutX="102.0" layoutY="580.0" prefWidth="64.0" text="Label" />
+                <Label fx:id="df_nv_label6" font="$x17" layoutX="102.0" layoutY="656.0" prefWidth="64.0" text="Label" />
+                <Text fill="$x1" font="$x16" layoutX="1028.0" layoutY="111.0" scaleX="1.0477384719583163" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Question" />
+                <Separator layoutX="1048.0" layoutY="123.0" prefWidth="269.0" />
+                <ComboBox fx:id="df_combo" layoutX="1048.0" layoutY="134.0" prefHeight="21.0" prefWidth="232.0" promptText="Choose Topic" visibleRowCount="6">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Placements" />
+                      <String fx:value="Projects" />
+                      <String fx:value="Internships" />
+                      <String fx:value="Higher Studies" />
+                      <String fx:value="Current Issues" />
+                      <String fx:value="Miscellaneous" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextArea fx:id="df_ques_text" layoutX="1048.0" layoutY="208.0" prefHeight="133.0" prefWidth="248.0" promptText="Enter Question" wrapText="true" />
+                <Button fx:id="df_ques_button" layoutX="1046.0" layoutY="355.0" mnemonicParsing="false" onAction="#addQues" text="Add Question" />
+                <TextField fx:id="df_title_text" layoutX="1048.0" layoutY="172.0" prefWidth="200.0" promptText="Enter Title" />
+                <Text fill="$x1" font="$x9" layoutX="627.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" />
+                <Label fx:id="df_title_label" font="$x5" layoutX="681.0" layoutY="79.0" prefWidth="149.19677734375" text="Label" />
+                <Hyperlink fx:id="df_update_hyp" font="$x15" layoutX="391.0" layoutY="39.0" text="Update" />
+                <Button fx:id="df_ans_button" layoutX="501.0" layoutY="656.0" mnemonicParsing="false" onAction="#addAnswer" prefWidth="114.8173828125" text="Add Answer" />
+                <Label fx:id="df_netv" layoutX="422.0" layoutY="155.0" text="Label" />
+                <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="391.0" layoutY="137.0" onMouseClicked="#voteUp" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@up_icon.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="391.0" layoutY="156.0" onMouseClicked="#voteDown" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@down_icon.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="iam_tab" text="In and Around Manipal">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ImageView fitHeight="712.75" fitWidth="1361.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                    <Image url="@profile.jpg" />
+                  </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="372.0" layoutY="703.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2014 The Manipal Diaries. All Rights Reserved." />
+                <Text fill="$x1" font="$x16" layoutX="1051.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a New Place:" />
+                <Separator layoutX="1042.0" layoutY="123.0" prefWidth="271.0" />
+                <ComboBox fx:id="iam_combo" layoutX="1051.0" layoutY="142.0" prefHeight="21.0" prefWidth="192.0" promptText="Choose Category">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Food Joints" />
+                      <String fx:value="Entertainment" />
+                      <String fx:value="Historical" />
+                      <String fx:value="Nature" />
+                      <String fx:value="Cultural" />
+                      <String fx:value="Miscellaneous" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextField fx:id="iam_title_text" layoutX="1051.0" layoutY="178.0" prefWidth="216.0" promptText="Enter Title" />
+                <Button fx:id="iam_add_button" layoutX="1051.0" layoutY="265.0" mnemonicParsing="false" onAction="#addPlace" prefWidth="108.0" text="Add Place" />
+                <Text fill="$x1" font="$x16" layoutX="40.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categories:" />
+                <Separator layoutX="40.0" layoutY="72.0" prefWidth="264.0" />
+                <Hyperlink fx:id="iam_cat_hyp1" font="$x10" layoutX="69.0" layoutY="85.0" onAction="#categoryHyper" text="Food Joints" />
+                <Hyperlink fx:id="iam_cat_hyp4" font="$x10" layoutX="172.0" layoutY="84.0" onAction="#categoryHyper" text="Nature" />
+                <Hyperlink fx:id="iam_cat_hyp2" font="$x10" layoutX="70.0" layoutY="113.0" onAction="#categoryHyper" text="Entertainment" />
+                <Hyperlink fx:id="iam_cat_hyp5" font="$x10" layoutX="172.0" layoutY="113.0" onAction="#categoryHyper" text="Cultural" />
+                <Hyperlink fx:id="iam_cat_hyp3" font="$x10" layoutX="70.0" layoutY="142.0" onAction="#categoryHyper" text="Historical" />
+                <Hyperlink fx:id="iam_cat_hyp6" font="$x10" layoutX="172.0" layoutY="142.0" onAction="#categoryHyper" text="Miscellaneous" />
+                <Separator layoutX="40.0" layoutY="178.0" prefWidth="264.0" />
+                <Text fill="$x1" font="$x16" layoutX="40.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" />
+                <Label id="iam_cat_label1" fx:id="iam_cat_label" font="$x12" layoutX="125.0" layoutY="195.0" prefWidth="131.0" text="Label" />
+                <Separator layoutX="40.0" layoutY="224.0" prefWidth="264.0" />
+                <Text fill="$x1" font="$x16" layoutX="40.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Places:" />
+                <Separator layoutX="39.0" layoutY="258.0" prefWidth="264.0" />
+                <Region layoutX="39.0" layoutY="273.0" opacity="0.05" prefHeight="47.0" prefWidth="281.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Hyperlink fx:id="iam_place_hyp1" font="$x10" layoutX="45.0" layoutY="273.0" onAction="#placeHyper" prefWidth="244.0" text="Place" />
+                <Region layoutX="39.0" layoutY="343.0" opacity="0.05" prefHeight="47.0" prefWidth="281.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="40.0" layoutY="408.0" opacity="0.05" prefHeight="47.0" prefWidth="281.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="39.0" layoutY="476.0" opacity="0.05" prefHeight="47.0" prefWidth="281.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="40.0" layoutY="543.0" opacity="0.05" prefHeight="47.0" prefWidth="281.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Region layoutX="40.0" layoutY="607.0" opacity="0.05" prefHeight="47.0" prefWidth="281.0" style="-fx-background-color: grey;&#10;-fx-background-radius: 3px;&#10;" />
+                <Hyperlink fx:id="iam_place_hyp2" font="$x10" layoutX="45.0" layoutY="343.0" onAction="#placeHyper" prefWidth="244.0" text="Place" />
+                <Hyperlink fx:id="iam_place_hyp3" font="$x10" layoutX="45.0" layoutY="408.0" onAction="#placeHyper" prefWidth="244.0" text="Place" />
+                <Hyperlink fx:id="iam_place_hyp4" font="$x10" layoutX="45.0" layoutY="476.0" onAction="#placeHyper" prefWidth="244.0" text="Place" />
+                <Hyperlink fx:id="iam_place_hyp5" font="$x10" layoutX="45.0" layoutY="543.0" onAction="#placeHyper" prefWidth="244.0" text="Place" />
+                <Hyperlink fx:id="iam_place_hyp6" font="$x10" layoutX="45.0" layoutY="607.0" onAction="#placeHyper" prefWidth="244.0" text="Place" />
+                <Text font="$x18" layoutX="845.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the Manipal Diaries" />
+                <TextField fx:id="iam_rating_text" layoutX="506.0" layoutY="567.0" prefWidth="200.0" promptText="Rating" />
+                <TextArea fx:id="iam_review_text" layoutX="506.0" layoutY="593.0" prefHeight="62.0" prefWidth="426.0" promptText="Write a Review" wrapText="true" />
+                <Text fill="$x1" font="$x16" layoutX="396.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a New Review:" wrappingWidth="61.0" />
+                <Button fx:id="iam_review_button" layoutX="506.0" layoutY="662.0" mnemonicParsing="false" onAction="#addReview" prefWidth="157.0" text="Add Review" />
+                <Text font="$x13" layoutX="708.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/10" />
+                <Text fill="$x1" layoutX="396.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:">
+                  <font>
+                    <Font name="Segoe Print" size="17.0" fx:id="x20" />
+                  </font>
+                </Text>
+                <Label fx:id="iam_cat_label1" layoutX="485.0" layoutY="66.0" prefWidth="131.0" text="Label">
+                  <font>
+                    <Font name="Segoe Marker" size="17.0" fx:id="x21" />
+                  </font>
+                </Label>
+                <Text fill="$x1" font="$x20" layoutX="396.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" />
+                <Label fx:id="iam_title_label" font="$x21" layoutX="447.0" layoutY="95.0" prefWidth="223.92724609375" text="Label" />
+                <Text fill="$x1" font="$x20" layoutX="396.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating and Reviews:" />
+                <Label fx:id="iam_review_label" font="$x22" layoutX="425.0" layoutY="168.0" prefHeight="389.0" prefWidth="529.0" text="Reviews Here" wrapText="true" />
+                <TextField fx:id="iam_loc_textf" layoutX="1051.0" layoutY="214.0" prefWidth="216.0" promptText="Enter Location" />
+                <Label layoutX="831.0" layoutY="74.0" text="Label" visible="false" />
+                <Text fill="#cc6200" font="$x20" layoutX="671.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+                <Label id="iam_title_label" fx:id="iam_loc_label" font="$x21" layoutX="758.0" layoutY="100.0" prefWidth="223.92724609375" text="Label" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <stylesheets>
+    <URL value="@profiletabs.css" />
+  </stylesheets>
+</AnchorPane>

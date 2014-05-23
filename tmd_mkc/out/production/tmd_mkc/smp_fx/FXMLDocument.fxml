@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="769.0" style="&#10;&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="smp_fx.FXMLDocumentController">
+  <children>
+    <ImageView fitHeight="964.8411617308998" fitWidth="1364.474609375" layoutX="0.0" layoutY="0.0" opacity="1.0" pickOnBounds="true" preserveRatio="true" rotate="0.0" style="">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+      <rotationAxis>
+        <Point3D z="1.0" />
+      </rotationAxis>
+    </ImageView>
+    <Region layoutX="708.0" layoutY="215.0" opacity="0.25" prefHeight="517.0" prefWidth="482.0" style="-fx-background-color: white;&#10;-fx-background-radius: 3px;" />
+    <Region layoutX="708.0" layoutY="40.0" opacity="0.25" prefHeight="122.0" prefWidth="482.0" style="-fx-background-color: white;&#10;-fx-background-radius: 3px;" />
+    <TextField fx:id="login_user_text" layoutX="726.0" layoutY="82.0" prefWidth="200.0" promptText="" />
+    <Label layoutX="726.0" layoutY="56.0" text="Username" textFill="WHITE" />
+    <Label layoutX="970.0" layoutY="59.0" text="Password" textFill="WHITE" />
+    <Button fx:id="login_button" layoutX="1116.0" layoutY="125.0" mnemonicParsing="false" onAction="#login" text="Log In" />
+    <Label layoutX="722.0" layoutY="226.0" prefWidth="248.0" text="New to The Manipal Diaries?" textFill="WHITE">
+      <font>
+        <Font name="MankSans" size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="970.0" layoutY="224.0" text="Sign Up." textFill="WHITE">
+      <font>
+        <Font name="System Italic" size="20.0" />
+      </font>
+    </Label>
+    <TextField fx:id="login_username" layoutX="726.0" layoutY="318.0" prefWidth="200.0" promptText="Username" />
+    <TextField fx:id="login_regno" layoutX="726.0" layoutY="367.0" prefWidth="200.0" promptText="Registration No." />
+    <TextField fx:id="login_email" layoutX="726.0" layoutY="415.0" prefWidth="200.0" promptText="E-mail" />
+    <TextField fx:id="login_password" layoutX="726.0" layoutY="460.0" prefWidth="200.0" promptText="Password" />
+    <TextField fx:id="login_repassword" layoutX="726.0" layoutY="507.0" prefWidth="200.0" promptText="Retype Password" />
+    <TextField fx:id="login_fname" layoutX="726.0" layoutY="276.0" prefWidth="200.0" promptText="Full Name" />
+    <Label layoutX="102.0" layoutY="40.0" text="the" textFill="WHITE">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="102.0" layoutY="64.0" text="Manipal" textFill="WHITE">
+      <font>
+        <Font name="MankSans" size="35.0" />
+      </font>
+    </Label>
+    <Label layoutX="102.0" layoutY="100.0" text="Diaries" textFill="WHITE">
+      <font>
+        <Font name="MankSans" size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="102.0" layoutY="138.0" text="Connect. Share. Explore." textFill="WHITE">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="login_signup_button" layoutX="1108.0" layoutY="691.0" mnemonicParsing="false" onAction="#signup" text="Sign Up" />
+    <PasswordField fx:id="login_pass" layoutX="970.0" layoutY="82.0" prefWidth="200.0" />
+    <Button fx:id="login_choose_button" layoutX="726.0" layoutY="555.0" mnemonicParsing="false" onAction="#handle" prefWidth="112.0" text="Choose Shadow" />
+    <ImageView fx:id="login_image" fitHeight="122.0" fitWidth="162.66666666666666" layoutX="726.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="login_user_label" layoutX="981.0" layoutY="324.0" prefWidth="191.0" text="Label" textFill="WHITE" />
+    <Label id="login_user_label" fx:id="login_pass_label" layoutX="981.0" layoutY="513.0" prefWidth="191.0" text="Label" textFill="WHITE" />
+  </children>
+</AnchorPane>
